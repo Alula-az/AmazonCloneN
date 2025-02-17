@@ -1,8 +1,6 @@
 import firebase from "firebase/compat/app";
-//auth
-import { getAuth } from "firebase/auth";
-import "firebase/compat/firestore";
-import "firebase/compat/auth";
+import "firebase/compat/auth"; // Import auth to use authentication functions
+import "firebase/compat/firestore"; // Import firestore if needed
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -16,5 +14,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const db = app.firestore();
+const auth = app.auth(); // This will give you access to the authentication methods
+const db = app.firestore(); // Initialize Firestore if you need it
+
+// Export the auth object so you can access it elsewhere in your app
+export { auth, db };
