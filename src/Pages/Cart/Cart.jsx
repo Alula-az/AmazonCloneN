@@ -66,7 +66,7 @@ function Cart() {
           )}
         </div>
         <hr />
-        <div>
+        <div className={classes.paymentBox}>
           {basket?.length !== 0 && (
             <div className={classes.subtotal}>
               <div>
