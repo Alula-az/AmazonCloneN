@@ -6,9 +6,10 @@ import classes from "../Header/Header.module.css";
 import { Link } from "react-router-dom";
 import LowerHeader from "../Header/LowerHeader";
 import {DataContext} from '../DataProvider/DataProvider'
+import {auth} from "../Utility/firbase"
 
 const Header = () => {
-  const [{basket},dispatch]=useContext(DataContext)
+  const [{user, basket},dispatch]=useContext(DataContext)
   const totalItem = basket?.reduce((amount,item)=>{
     return item.amount+amount
   },0)
@@ -45,7 +46,7 @@ const Header = () => {
               </select>
               <input type="text" name="" id="" placeholder="search product" />
               {/* icon */}
-              <FaSearch size={25} />
+              <FaSearch size={38} />
             </div>
             {/* right side link */}
             <div className={classes.order_container}>
@@ -59,9 +60,21 @@ const Header = () => {
                 </select>
               </Link>
               {/* three components */}
-              <Link to="/Auth">
-                <p>Sign In</p>
-                <span>Account & Lists</span>
+              <Link to={!user && "/Auth"}>
+                <div>
+                  {user ? (
+                    <>
+                      <p>Hello {user.email?.split("@")[0]}</p>
+                      <span onClick={()=>auth.signOut()}>Sign Out</span>
+                    </>
+                  ) : (
+                    <>
+                    
+                    <p>Hello, Sign In</p>
+                    <span>Account & Lists</span>
+                    </>
+                  )}
+                </div>
               </Link>
               {/* orders */}
               <Link to="/Orders">
