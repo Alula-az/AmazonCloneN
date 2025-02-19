@@ -5,24 +5,27 @@ import { Type } from "./Components/Utility/action.type";
 import { auth } from "./Components/Utility/firbase";
 
 function App() {
-  const [{user}, dispatch] = useContext(DataContext)
-  useEffect(()=>{
-    auth.onAuthStateChanged((authUser)=>{
-      if(authUser){
-        console.log(authUser)
-        dispatch({
-          type:Type.SET_USER,
-          user:authUser
-        })
-      }else{
+  const [{ user }, dispatch] = useContext(DataContext);
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
+        console.log("User logged in:", authUser);
         dispatch({
           type: Type.SET_USER,
-          user: null
-        })
+          user: authUser,
+        });
+      } else {
+        console.log("User logged out");
+        dispatch({
+          type: Type.SET_USER,
+          user: null,
+        });
       }
-    })
-  })
+    });
 
+    return () => unsubscribe(); // Cleanup function to avoid memory leaks
+  }, []); // ✅ Empty dependency array to prevent infinite loops
 
   return <Routing />;
 }
