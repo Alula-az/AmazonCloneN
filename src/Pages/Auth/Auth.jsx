@@ -7,6 +7,7 @@ import { DataContext } from "../../Components/DataProvider/DataProvider";
 import { Type } from "../../Components/Utility/action.type";
 import { auth } from "../../Components/Utility/firbase"; // Import auth directly
 
+
 function Auth() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
