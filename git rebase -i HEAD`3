@@ -1,0 +1,12 @@
+[33mec30b0c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Client side payment functionality
+[33m8533b37[m cart pape freezing fixed
+[33me4b0dd7[m renamed Front End to Frontend
+[33m53e0b7c[m Backend folder with amazon-api
+[33m2a6c0ab[m Amazon Backend api
+[33m2765399[m All files moved to Front End folder
+[33meedb9f5[m setting up backend payment API using firebase function
+[33m9aaf8c1[m sign out, loading and error states
+[33m0ea614a[m :
+[33m8b2cd75[m Auth page and all errors are fixed
+[33m04bef42[m Auth page with some problem not fixed
+[33mb3b0cc9[m Amazon Clone after cart finished
