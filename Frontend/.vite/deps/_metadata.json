@@ -1,0 +1,136 @@
+{
+  "hash": "21dfcc9f",
+  "configHash": "9f34c743",
+  "lockfileHash": "5a25e10b",
+  "browserHash": "0542fcdf",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "bd213d19",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "22e93627",
+      "needsInterop": true
+    },
+    "firebase/compat/app": {
+      "src": "../../node_modules/firebase/compat/app/dist/esm/index.esm.js",
+      "file": "firebase_compat_app.js",
+      "fileHash": "89d63635",
+      "needsInterop": false
+    },
+    "firebase/compat/auth": {
+      "src": "../../node_modules/firebase/compat/auth/dist/esm/index.esm.js",
+      "file": "firebase_compat_auth.js",
+      "fileHash": "ee46d477",
+      "needsInterop": false
+    },
+    "firebase/compat/firestore": {
+      "src": "../../node_modules/firebase/compat/firestore/dist/esm/index.esm.js",
+      "file": "firebase_compat_firestore.js",
+      "fileHash": "ff00b6bc",
+      "needsInterop": false
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "3cf83a1a",
+      "needsInterop": false
+    },
+    "@stripe/react-stripe-js": {
+      "src": "../../node_modules/@stripe/react-stripe-js/dist/react-stripe.esm.mjs",
+      "file": "@stripe_react-stripe-js.js",
+      "fileHash": "8b44f159",
+      "needsInterop": false
+    },
+    "@stripe/stripe-js": {
+      "src": "../../node_modules/@stripe/stripe-js/lib/index.mjs",
+      "file": "@stripe_stripe-js.js",
+      "fileHash": "a0f5ee02",
+      "needsInterop": false
+    },
+    "react-icons/io": {
+      "src": "../../node_modules/react-icons/io/index.mjs",
+      "file": "react-icons_io.js",
+      "fileHash": "b861ee3c",
+      "needsInterop": false
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "7ce14ee5",
+      "needsInterop": false
+    },
+    "react-spinners": {
+      "src": "../../node_modules/react-spinners/esm/index.js",
+      "file": "react-spinners.js",
+      "fileHash": "60a67f9b",
+      "needsInterop": false
+    },
+    "@mui/material/Rating": {
+      "src": "../../node_modules/@mui/material/Rating/index.js",
+      "file": "@mui_material_Rating.js",
+      "fileHash": "3de314ae",
+      "needsInterop": false
+    },
+    "react-responsive-carousel": {
+      "src": "../../node_modules/react-responsive-carousel/lib/js/index.js",
+      "file": "react-responsive-carousel.js",
+      "fileHash": "c313a4bf",
+      "needsInterop": true
+    },
+    "numeral": {
+      "src": "../../node_modules/numeral/numeral.js",
+      "file": "numeral.js",
+      "fileHash": "66df1643",
+      "needsInterop": true
+    },
+    "react-icons/fa": {
+      "src": "../../node_modules/react-icons/fa/index.mjs",
+      "file": "react-icons_fa.js",
+      "fileHash": "be7ee7a3",
+      "needsInterop": false
+    },
+    "react-icons/hi2": {
+      "src": "../../node_modules/react-icons/hi2/index.mjs",
+      "file": "react-icons_hi2.js",
+      "fileHash": "b9e02089",
+      "needsInterop": false
+    },
+    "react-icons/gr": {
+      "src": "../../node_modules/react-icons/gr/index.mjs",
+      "file": "react-icons_gr.js",
+      "fileHash": "2855123c",
+      "needsInterop": false
+    },
+    "react-icons/gi": {
+      "src": "../../node_modules/react-icons/gi/index.mjs",
+      "file": "react-icons_gi.js",
+      "fileHash": "72e13005",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-IGAL4HQT": {
+      "file": "chunk-IGAL4HQT.js"
+    },
+    "chunk-5TZ7PBLN": {
+      "file": "chunk-5TZ7PBLN.js"
+    },
+    "chunk-UP6LQVYV": {
+      "file": "chunk-UP6LQVYV.js"
+    },
+    "chunk-MCMOV7PY": {
+      "file": "chunk-MCMOV7PY.js"
+    },
+    "chunk-TWJRYSII": {
+      "file": "chunk-TWJRYSII.js"
+    },
+    "chunk-DC5AMYBS": {
+      "file": "chunk-DC5AMYBS.js"
+    }
+  }
+}
