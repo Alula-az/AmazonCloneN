@@ -9,16 +9,16 @@
     /* Pushes the category container slightly upwards */
     z-index: 1;
     /* Ensure it's above other elements */
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-left: 20px;
+    padding-right: 20px;
     /* Optional: Adds some padding on top if necessary */
-    margin-bottom: 0;
 }
 
 /* Category Card */
 .category {
-    height: 350px;
-    width: 350px;
+    /* height: auto; */
+    width: auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -28,6 +28,7 @@
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
     /* Smooth transition for hover effect */
+    margin-top: 0;
 }
 
 /* Image within the Category Card */
@@ -95,7 +96,7 @@
     }
 
     .category img {
-        height: 150px;
+        height: 60%;
         /* Smaller image size for mobile */
     }
 }
@@ -114,7 +115,7 @@
     }
 
     .category img {
-        height: 120px;
+        height: 60%;
         /* Smaller image size */
     }
 }
